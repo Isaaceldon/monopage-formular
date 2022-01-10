@@ -1,0 +1,377 @@
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: mediumaquamarine !important;
+    overflow-y: hidden;
+    font-family: times new roman !important;
+}
+
+svg {
+    bottom: 0px;
+    position: absolute;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+.menu {
+    width: 100%;
+    height: 75px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-bottom: 2px solid blue;
+}
+
+.menu ul {
+    display: flex;
+    margin-left: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul li {
+    margin-right: 3em;
+}
+
+.logo img {
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.menu ul li a {
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    display: block;
+    line-height: 50px;
+    width: 100px;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+section {
+    display: flex !important;
+    width: 90%;
+    height: 550px;
+    border: 1px solid red;
+    box-sizing: border-box;
+    margin: 0px auto;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+#open-menu {
+    display: none;
+    color: white;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+#close-menu {
+    display: none;
+    color: red;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.container1 {
+    flex: 1;
+    background-color: darkblue;
+}
+
+.container2 {
+    flex: 1;
+    background-color: cyan;
+}
+
+.form1,
+.form2 {
+    padding: 25px;
+    width: 90%;
+    position: relative;
+    margin: 0px auto;
+}
+
+.form1 div,
+.form2 div {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    position: relative;
+    width: 100%;
+    /* border: 1px solid red; */
+
+}
+
+.form1 h2 {
+    color: white;
+}
+
+.form1 div label {
+    font-size: 25px;
+    color: white;
+}
+
+.form1 div {
+    margin: 1.5rem 0rem;
+}
+
+.form2 div {
+    margin: 1rem 0rem;
+}
+
+.form2 div label {
+    font-size: 20px;
+}
+
+.form1 div input {
+    height: 40px;
+    width: 70%;
+    outline: none;
+}
+
+.form2 div input {
+    height: 35px;
+    width: 60%;
+    outline: none;
+}
+
+.form1 input[type="submit"] {
+    height: 40px;
+    width: 80%;
+    position: relative;
+    margin: 0px auto;
+    margin-top: 2rem !important;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    font-size: 25px;
+    color: maroon;
+    box-shadow: 0px 5px 3px rgba(0, 0, 0, 1), 0px -5px 3px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    display: block;
+}
+
+.form2 input[type="submit"] {
+    display: block;
+    height: 40px;
+    width: 100%;
+    position: relative;
+    margin: 25px 0px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    font-size: 25px;
+    color: maroon;
+    box-shadow: 0px 5px 3px rgba(0, 0, 0, 1), 0px -5px 3px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.form1 input[type="submit"]:hover {
+    background-color: darkblue;
+    color: yellow;
+    box-shadow: 0px 5px 3px rgba(231, 229, 229, 0.849), 0px -5px 3px rgba(250, 239, 239, 0.952);
+
+}
+
+.form2 input[type="submit"]:hover {
+    background-color: darkblue;
+    color: yellow;
+}
+
+/* .cercle{
+    display: block;
+    position: relative;
+    width: 100%;
+    height:500px;
+    background-color:gold;
+    clip-path: circle(200px ,300px);
+}  */
+
+
+@media screen and (max-width:768px) {
+    .container-p {
+        margin-top: 1rem !important;
+    }
+
+    #open-menu {
+        display: block;
+        color: white;
+    }
+
+    #close-menu {
+        display: block;
+        position: relative;
+        float: right;
+        padding: 5px;
+    }
+
+    body {
+        overflow: auto;
+    }
+
+    .menu .logo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .menu {
+        justify-content: space-between;
+        /* position: fixed; */
+        border-bottom: 1px solid white;
+        z-index: 1;
+        height: 100px;
+        /* flex-direction: column; */
+    }
+
+    #welcome {
+        /* margin-top: 100px;
+        position: relative; */
+    }
+
+    .menu ul {
+        display: block;
+        z-index: 100;
+        position: fixed;
+        height: 100vh;
+        background-color: teal;
+        width: 80%;
+        left: -80%;
+        top: 100px;
+        transition: all 500ms ease-in-out;
+        -webkit-transition: all 500ms ease-in-out;
+        -moz-transition: all 500ms ease-in-out;
+        -ms-transition: all 500ms ease-in-out;
+        -o-transition: all 500ms ease-in-out;
+    }
+
+    .menu ul li {
+        margin: 0px !important;
+        width: 100% !important;
+        position: relative;
+        line-height: 50px;
+        /* border: 1px solid white; */
+
+    }
+
+    .menu ul li a {
+        /* border: 1px solid red; */
+        padding: 0;
+        display: block;
+        font-size: 25px;
+        width: 100%;
+        position: relative;
+        text-align: left !important;
+        border-bottom: 1px solid white;
+    }
+
+    section {
+        position: relative;
+        flex-direction: column;
+        height: auto;
+        width: 100% !important;
+        background-color: darkblue;
+    }
+
+    .form1,
+    .form2 {
+        width: 100% !important;
+        padding: 0px !important;
+        margin: 0px !important;
+        /* border: 1px solid yellow; */
+    }
+
+    .form1 div,
+    .form2 div {
+        position: relative;
+        flex-direction: column;
+        width: 100% !important;
+        /* border: 1px solid green; */
+        margin: 0px !important;
+        /* text-align: left !important; */
+    }
+
+    .form1 div label {
+        display: block;
+        padding: 0px !important;
+        margin: 0px !important;
+    }
+
+    .form2 div label {
+        display: block;
+        padding: 0px !important;
+        margin: 0px !important;
+    }
+
+    .form1 div input {
+        /* border: 1px solid red; */
+        width: 90% !important;
+        display: block;
+        position: relative;
+    }
+
+    .form2 div input {
+        width: 90% !important;
+        display: block;
+        position: relative;
+        height: 40px !important;
+        margin-bottom: 0.5rem !important;
+        /* border: 1px solid red; */
+    }
+
+    .container1,
+    .container2 {
+        /* margin: 3rem 0rem; */
+    }
+
+    .form1 h2 {
+        color: white;
+        text-align: center;
+        margin-bottom: 1rem;
+        background-color: maroon;
+        padding: 0.5rem 0rem;
+    }
+
+    .form2 h2 {
+        text-align: center;
+        margin-bottom: 1rem;
+        background-color: maroon;
+        padding: 0.5rem 0rem;
+    }
+
+    .container1 {
+        background-color: darkblue;
+    }
+
+    .container2 {
+        background-color: darkblue !important;
+        color: white;
+    }
+
+    .form2 input[type="submit"] {
+        height: 40px;
+        width: 80% !important;
+        position: relative;
+        margin: 1rem auto !important;
+        /* margin: 1rem 0rem !important; */
+        display: block;
+    }
+}

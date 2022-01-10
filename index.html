@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome/all.min.css">
+</head>
+
+<body>
+
+    <div>
+        <div class="menu">
+            <div class="logo">
+                <a href=""><img src="img/ballon-cadeau.jpg" width="70px" height="70px"></a>
+            </div>
+            <span id="open-menu"><i class="fas fa-bars"></i></span>
+            <ul id="all-sous-menu">
+                <span id="close-menu"><i class="fas fa-times"></i></span>
+                <li class="sous-menu"><a href="">Accueil</a></li>
+                <li class="sous-menu"><a href="">Blog</a></li>
+                <li class="sous-menu"><a href="">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="cercle"></div>
+    <h1 id="welcome">Bienvenu sur mon site</h1>
+
+    <section>
+        <div class="container1">
+            <p class="text-danger font-italic container-p">Avez-vous déjà un compte?connectez-vous!</p>
+            <form class="form1">
+                <h2>CONNEXION</h2>
+                <div>
+                    <p><label>Adresse email</label></p>
+                    <input type="email" name="email">
+                </div>
+                <div>
+                    <p><label>Mot de passe</label></p>
+                    <input type="text" name="password">
+                </div>
+                <p><input type="submit" value="Se Connecter"></p>
+            </form>
+
+        </div>
+
+        <div class="container2">
+<p class="text-danger font-italic container-p">Vous n'avez pas un compte,veuillez donc vous inscrire!</p>
+            <form class="form2">
+                <h2>INSCRIPTION</h2>
+                <div>
+                    <p><label>Nom</label></p>
+                    <input type="text" name="nom">
+                </div>
+                <div>
+                    <p><label>Prénoms</label></p>
+                    <input type="text" name="prenom">
+                </div>
+                <div>
+                    <p><label>Adresse email</label></p>
+                    <input type="email" name="email">
+                </div>
+                <div>
+                    <p><label>Mot de passe</label></p>
+                    <input type="password" name="password">
+                </div>
+                <div>
+                    <p><label>Confirmer mot de passe</label></p>
+                    <input type="password" name="password">
+                </div>
+                <p><input type="submit" value="S'inscrire"></p>
+            </form>
+        </div>
+    </section>
+    <script src="js/jquery.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+
+</html>
