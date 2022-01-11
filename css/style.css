@@ -19,7 +19,6 @@ svg {
     position: absolute;
 }
 
-
 h1 {
     text-align: center;
 }
@@ -64,7 +63,7 @@ section {
     display: flex !important;
     width: 90%;
     height: 550px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     box-sizing: border-box;
     margin: 0px auto;
     flex-direction: row;
@@ -111,7 +110,6 @@ section {
     position: relative;
     width: 100%;
     /* border: 1px solid red; */
-
 }
 
 .form1 h2 {
@@ -189,13 +187,13 @@ section {
     background-color: darkblue;
     color: yellow;
     box-shadow: 0px 5px 3px rgba(231, 229, 229, 0.849), 0px -5px 3px rgba(250, 239, 239, 0.952);
-
 }
 
 .form2 input[type="submit"]:hover {
     background-color: darkblue;
     color: yellow;
 }
+
 
 /* .cercle{
     display: block;
@@ -206,33 +204,27 @@ section {
     clip-path: circle(200px ,300px);
 }  */
 
-
 @media screen and (max-width:768px) {
     .container-p {
         margin-top: 1rem !important;
     }
-
     #open-menu {
         display: block;
         color: white;
     }
-
     #close-menu {
         display: block;
         position: relative;
         float: right;
         padding: 5px;
     }
-
     body {
         overflow: auto;
     }
-
     .menu .logo img {
         width: 50px;
         height: 50px;
     }
-
     .menu {
         justify-content: space-between;
         /* position: fixed; */
@@ -241,12 +233,10 @@ section {
         height: 100px;
         /* flex-direction: column; */
     }
-
     #welcome {
         /* margin-top: 100px;
         position: relative; */
     }
-
     .menu ul {
         display: block;
         z-index: 100;
@@ -262,16 +252,13 @@ section {
         -ms-transition: all 500ms ease-in-out;
         -o-transition: all 500ms ease-in-out;
     }
-
     .menu ul li {
         margin: 0px !important;
         width: 100% !important;
         position: relative;
         line-height: 50px;
         /* border: 1px solid white; */
-
     }
-
     .menu ul li a {
         /* border: 1px solid red; */
         padding: 0;
@@ -282,7 +269,6 @@ section {
         text-align: left !important;
         border-bottom: 1px solid white;
     }
-
     section {
         position: relative;
         flex-direction: column;
@@ -290,7 +276,6 @@ section {
         width: 100% !important;
         background-color: darkblue;
     }
-
     .form1,
     .form2 {
         width: 100% !important;
@@ -298,7 +283,6 @@ section {
         margin: 0px !important;
         /* border: 1px solid yellow; */
     }
-
     .form1 div,
     .form2 div {
         position: relative;
@@ -308,26 +292,22 @@ section {
         margin: 0px !important;
         /* text-align: left !important; */
     }
-
     .form1 div label {
         display: block;
         padding: 0px !important;
         margin: 0px !important;
     }
-
     .form2 div label {
         display: block;
         padding: 0px !important;
         margin: 0px !important;
     }
-
     .form1 div input {
         /* border: 1px solid red; */
         width: 90% !important;
         display: block;
         position: relative;
     }
-
     .form2 div input {
         width: 90% !important;
         display: block;
@@ -336,12 +316,10 @@ section {
         margin-bottom: 0.5rem !important;
         /* border: 1px solid red; */
     }
-
     .container1,
     .container2 {
         /* margin: 3rem 0rem; */
     }
-
     .form1 h2 {
         color: white;
         text-align: center;
@@ -349,23 +327,19 @@ section {
         background-color: maroon;
         padding: 0.5rem 0rem;
     }
-
     .form2 h2 {
         text-align: center;
         margin-bottom: 1rem;
         background-color: maroon;
         padding: 0.5rem 0rem;
     }
-
     .container1 {
         background-color: darkblue;
     }
-
     .container2 {
         background-color: darkblue !important;
         color: white;
     }
-
     .form2 input[type="submit"] {
         height: 40px;
         width: 80% !important;
